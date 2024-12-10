@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-break: 1.6;
+            margin: 20px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            align-content: center;
+            height: 150px;
+        }
+
+        nav {
+            background-color: rgb(7, 72, 212);
+            padding: 10px;
+
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: beige;
+            font-size: 1rem;
+            padding: 5px;
+        }
+
+        section {
+            margin: 5px;
+            background-color: bisque;
+            padding-left: 10px;
+            display: flex;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+        }
+
+        audio,
+        video {
+            display: block;
+            padding: 10px;
+        }
+
+        table {
+            width: 400px;
+            margin: 10px;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid;
+        }
+
+        th,
+        td {
+            padding: 7px;
+            text-align: left;
+        }
+
+        aside {
+            flex: 1;
+            background-color: aquamarine;
+        }
+
+        article {
+            flex: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Curriculum Demo</h1>
+        <p>Learning HTML step by step</p>
+    </header>
+
+    <nav>
+        <a href="">Text</a>
+        <a href="">Media</a>
+        <a href="">Table</a>
+        <a href="">Lists</a>
+        <a href="">Forms</a>
+    </nav>
+    <section>
+        <article>
+            <h2>Text Formatting</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus nobis veritatis, <br>
+                tenetur
+                fgx facilis temporibus, veniam ab odio aliquid incidunt, eos esse pariatur
+                facere.</p>
+            <hr>
+            <h2>Multimedia</h2>
+            <p>Embedded audio and video:</p>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+
+            </audio>
+            <video controls width="500px" height="200px">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <hr>
+            <h2>Tables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>25</td>
+                        <td>new york</td>
+                    </tr>
+                    <tr>
+                        <td>sarah</td>
+                        <td>44</td>
+                        <td>US</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Lists</h2>
+            <p>Here an ordered and nested Unordered list:</p>
+            <ol>
+                <li>HTML Basics</li>
+                <li>CSS BAsics</li>
+                <li>Javascript BAsics</li>
+            </ol>
+            <ul>
+                <li>Formatted</li>
+            </ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            </ul>
+            <ul>
+                <li>Backend</li>
+            </ul>
+            <li>Node js</li>
+            <li>PHP</li>
+            </ul>
+        </article>
+        <aside>
+            <h2>Quick Links</h2>
+            <li>
+                <a href="">Text Formatting</a>
+            </li>
+            <li>
+                <a href="">Multimedia</a>
+            </li>
+            <li>
+                <a href="">Tables</a>
+            </li>
+            <li>
+                <a href="">Lists</a>
+            </li>
+            <li>
+                <a href="">Forms</a>
+            </li>
+        </aside>
+
+    </section>
+    <footer>
+        &copy;2024 HTML Cirrisulum Demo. All Righrs Reserved.
+    </footer>
+</body>
+
+</html>
