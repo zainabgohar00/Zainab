@@ -78,3 +78,49 @@ console.log("perimeter of rectangle" , perimerter_of_rectangle+"cm")
 let str= "we are learing java script"
 console.log("the position of java is", str.indexOf(" "))
 
+ // writea program that exracts sub string from a main string
+// let line= "today is friday"
+// console.log(line.substr(9,15))
+
+ // find the last occurance of "is" in the string "this is a test. this is only a test"
+// let last= "it is last day"
+// console.log(last.lastIndexOf("is"))
+
+// craete a new varaible 'greeting' by concatenating "hello" and the name.
+let greeting = "Hello"
+let name= "zaynab"
+console.log(greeting+name)
+
+//declear the value of 'age'  to 5  
+let = 5
+//  use a mathematical operators to calculate 'ageInMonths' (multiply age by 12)
+let x= 12
+console.log("the age in months are" ,x*5)
+
+// declear a varaible 'num' and asign a number to it (e.g. 10)
+let num= 12
+// use 'if-else' statement to check if a 'num' is even or odd. 
+if (x = num % 2 == 0 ){
+    console.log("The number is Even")
+}
+else{
+    console.log("The number is Odd ")
+}
+
+// declear a varaible 'num' and assign a value to it (e.g 0)
+// use nested 'if-else' statement to check :
+// -if 'num' is greater than 0, print "Positive Number"
+// -if 'num' is less than 0, print "Negative Number"
+// -if 'num' is equal to 0, print "Zero"
+
+let number= -5
+if(number>0){
+    console.log("Positive Number")
+}
+else if(number<0){
+    console.log("Negative Number")
+
+}
+else{
+    console.log("Zero" )
+}
