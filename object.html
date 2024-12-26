@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            name: "Ali",
+            age: 32,
+            isStudent: true
+        }
+        // print name of perosn
+        console.log(person.name)
+        // update age to the new value
+        person.age=34
+        console.log(person.age)
+        // add new property called hobby
+        person.hobby="reading"
+        console.log(person)
+        // print the entire person
+        console.log(person)
+
+        // create an object called car with brand,model,year,owner(owner contains properties: NAme,age,address(city,zip))
+        const car={
+            brand:"civic",
+            model:"toyota",
+            year: 2022,
+            owener:{
+                name:"hamza",
+                age:25,
+                address:"Karachi"
+            }
+
+        }
+        console.log(car.model);
+        console.log(car.owener.address)
+        car.owener.age=27
+        console.log(car.owener.age)
+        car.owener.phone="43764363"
+        console.log(car.owener)
+console.log(car)
+
+        </script>
+</body>
+
+</html>
