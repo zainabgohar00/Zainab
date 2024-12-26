@@ -104,5 +104,3 @@ else{
 }
 (isEven("4"))
 
-// 10.
-// Write a program for a game: Rock, Paper, Scissor.
