@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            border-radius: 8px;
+            padding: 15px;
+            font-size: larger;
+            background-color: rgb(222, 45, 45);
+            color: white;
+            border: 3px solid;
+            border-color: black;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" onclick="changeText()">Complete</button>
+    <div>
+    <p id="paragraph">Lorem ipsconsectet. s, nulla porro velit enim
+        ait nisi.</p>
+    <button id="btn2" onclick="toggleHide()">Show/Hide</button>
+    </div>
+</body>
+<script>
+    function changeText() {
+        let button = document.querySelector('#btn')
+        if (button.innerHTML == "Complete") {
+            button.innerHTML = "Completed"
+            button.style.backgroundColor = 'green'
+        }
+        else {
+            button.innerHTML = "Complete"
+            button.style.backgroundColor = "red"
+        }
+    }
+
+    function toggleHide() {
+        btn = document.getElementById('btn2')
+        paragraph = document.getElementById('paragraph')
+        if (paragraph.style.display != 'none') {
+            paragraph.style.display = 'none'
+        }
+        else {
+            paragraph.style.display = 'block'
+        }
+    }
+</script>
+
+</html>
