@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" >
+        Time is = <span id="time"></span>
+    </div>
+
+
+    <script>
+        function greet(name, text) {
+           alert(`${text}, ${name}`)
+            
+        }
+        // let timeout=setTimeout(greet, 3000,"John", "Good Morning")
+        // console.log(timeout);
+        
+        // clearTimeout(timeout)
+        let timeOut=setInterval(greet, 1000, "John", "GoodMorning")
+        console.log(timeOut);
+        clearInterval(timeOut)
+
+       
+        
+        function displayTime(){
+        let time = document.querySelector('#time')
+        
+        time.innerHTML = new Date()
+        }
+        setInterval(displayTime, 1000)
+    </script>
+    <span id="stopwatch"></span>
+
+    <!-- <script>
+        function stopwatch(){
+        
+            let count = 0
+            intervalid = setInterval(() => {console.log("Time", count, "seconds");
+            count++
+            if (count>10){
+                clearInterval(intervalid)
+                console.log("stopwatch Stopped");
+                
+            }
+                
+            }, 1000);
+           
+        }
+        stopwatch()
+
+
+
+    </script> -->
+    <!-- <script>
+        let calculator = {
+            a:4,
+            b:9,
+            add(){
+                return this.a + this.b
+            },
+            multiply(){
+                return this.a * this.b
+            }
+        }
+        console.log('Addition of a and b', calculator.add())
+        console.log('Multiplication of a and b', calculator.multiply())
+        console.log(calculator);
+        
+        let string = JSON.stringify(calculator)
+        console.log(string);
+
+        let obj = JSON.parse(string)
+        console.log(obj);
+        
+        
+
+    </script> -->
+</body>
+</html>
+
