@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            background-color: rgb(99, 104, 107);
+        }
+
+        form {
+            background-color: rgb(218, 184, 184);
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 6px 6px 12px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input {
+            border: solid 2px;
+        }
+
+        textarea {
+            width: 300px;
+            padding: 3px;
+            border: solid 2px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            background-color: rgb(221, 14, 14);
+            width: 400px;
+            border-radius: 10px;
+            border: none;
+            color: rgb(207, 223, 209);
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(107, 100, 91);
+            font-size: large;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        select {
+            width: 300px;
+            padding: 6px;
+            border: solid 2px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Contact Form</h1>
+    <form action="#" enctype="multipart/form-data">
+        <p>
+            <label for="name">Name:</label>
+            <input type="name" name="name" id="name">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="ali1223@gmail.com">
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+        </p>
+        <p>
+            <label for="Contact">Contact Number:</label>
+            <input type="number" name="Contact" id="Contact" placeholder="0312456863">
+        </p>
+        <p>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+        </p>
+        <p>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+        </p>
+        <p>
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time">
+        </p>
+        <p>
+            <label for="file ">File Upload:</label>
+            <input type="file" name="file" id="file">
+        </p>
+        <fieldset>
+            <legend> Gender</legend>
+            <input type="radio" name="Gender" id="male">
+            <label for="male"> Male </label>
+            <input type="radio" name="Gender" id="female">
+            <label for="female">Female </label>
+        </fieldset>
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" name="Hobbies" id="reading" value="reading"> <label for="reading">Reading</label>
+            <input type="checkbox" name="Hobbies" id="writing" value="writing"> <label for="writing">Writing</label>
+            <input type="checkbox" name="Hobbies" id="painting" value="painting"> <label for="painting">Painting</label>
+            <input type="checkbox" name="Hobbies" id="reading" value="Travelling"> <label
+                for="Travelling">Travelling</label>
+        </fieldset>
+        <p>
+            <label for="select">Select any option:</label>
+            <select name="select" id="select">
+                <option value="select">Select</option>
+                <option value="option1">Option1</option>
+                <option value="option2">Option2</option>
+                <option value="option3">Option3</option>
+                <option value="option4">Option4</option>
+            </select>
+        </p>
+        <p>
+            <label for="textarea">Message Us:</label>
+            <textarea name="text" id="text"></textarea>
+        </p>
+        <p>
+            <button type="submit">Submit Now</button>
+        </p>
+        <p>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+</body>
+</html>
