@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Mid</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        section {
+            margin: 10px;
+        }
+
+        .header {
+            background-color: aqua;
+            text-align: center;
+        }
+
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid;
+            border-collapse: collapse;
+
+            padding: 5px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+        }
+
+        .vid {
+            display: flex;
+            justify-content: center;
+            height: 150px;
+        }
+
+        input,
+        label {
+            display: block;
+            padding: 5px;
+            width: 100%;
+        }
+
+        button {
+            background-color: rgb(3, 245, 27);
+            margin-top: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <h1>Welcome To My Webpage</h1>
+        </div>
+        <div class="header">
+            <h3>Table Example</h3>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div class="header">
+            <h3>Image Example</h3>
+        </div>
+        <div class="img">
+            <img src="images.jpg" alt="Laptop" loading="lazy">
+        </div>
+        <div class="header">
+            <h3>Video Example</h3>
+        </div>
+        <div class="vid">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+        </div>
+        <div class="header">
+            <h3>Contact Form</h3>
+        </div>
+        <div class="form">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="ali@00gmail.com">
+                <label for="message">Mesaage</label>
+                <input type="text" name="message" id="message" placeholder="Enter your message">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
